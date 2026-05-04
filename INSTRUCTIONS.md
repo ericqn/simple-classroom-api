@@ -7,9 +7,9 @@ Learn the basics on some of the backend APIs we will be using. You will be spend
 
 ## Important Notes: 
 
-Each one of these parts should be ONE branch + pull request in your repository. Ideally, each of your commits should also encompass one of the bullet points specified for each part. After each one of these parts, please create an MR and assign me as the reviewer. I will read over your code and provide comments if necessary. 
+PLEASE DO NOT COMMIT TO MAIN. Each one of these parts should be you creating ONE new branch + pull request (PR) in your repository. Ideally, each of your commits should also encompass one of the bullet points specified for each part. After each one of these parts, please create an PR and assign me as the reviewer. I will read over your code and provide comments if necessary. 
 
-The exact details of this project are largely omitted, so you will be tasked with designing some of the more granular features like the functions, parameters, file structure, etc. In the review, I will mainly be looking to see if you have followed the part instructions to a certain degree and maintained clean code formatting and structure.
+The exact details of this project are largely omitted, so you will be tasked with designing some of the more granular features like the function headers, parameters, file structure, etc. In the review, I will mainly be looking to see if you have followed the part instructions, completed the deliverables (if provided), and maintained clean code formatting and structure.
 
 ## Part 1: FastAPI Basics (1-2 days)
 
