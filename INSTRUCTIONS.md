@@ -1,11 +1,11 @@
-## Objective: Learn the basics on some of the backend APIs we will be using. Spend 4-6 days to do the following:
-Create an API that manages signing up for student classes. Curate a set of classes that your API provides (at least 6) and enable the user to see the descriptions of these classes and sign up for ones that they like. Allow for instructor users to 
+# Objective: Learn the basics on some of the backend APIs we will be using. You will be spending roughly a week to do the following:
+Create an API that manages signing up for student classes. Curate a set of classes that your API provides (at least 6) and enable the user to see the information of these classes and sign up for ones that they like. Allow for an instructor on the platform to create their own classes.
 
-Important Notes: 
+## Important Notes: 
 
 Each one of these parts should be ONE pull request in your repository. After each one of these parts, please create an MR and assign me as the reviewer. I will read over your code and provide comments if necessary.
 
-Part 1: FastAPI Basics (1-2 days)
+## Part 1: FastAPI Basics (1-2 days)
 
 Deliverables:
 
@@ -15,9 +15,12 @@ Deliverables:
 - Host your new API locally using uvicorn library
 - FastAPI comes with a built-in documentation handler and tester, hosted on Swagger UI. Create requests to each of your endpoints using the Swagger UI to see what happens.
 - Learn to use cURL to hit each of your endpoints from the computer terminal.
-- Example command: curl -X GET "http://localhost:8000/api/my-test-endpoint"
+- Example command: 
+```bash
+curl -X GET "http://localhost:8000/api/my-test-endpoint"
+```
 
-Part 2: FastAPI + pydantic (1 day)
+## Part 2: FastAPI + pydantic (1 day)
 
 Deliverables:
 
@@ -26,7 +29,7 @@ Deliverables:
 - pydantic allows you to ensure data sent into your API fits a certain standard and/or format. if a bad actor is to use your API, they are prevented from sending in bad requests
 - Upgrade your API to take in specific simple schemas you've built from pydantic (at least 3 fields)
 
-Part 3: sqlalchemy/PostgreSQL basics (2-3 days)
+## Part 3: sqlalchemy/PostgreSQL basics (2-3 days)
 
 - Import sqlalchemy
 - Setup a database using postgreSQL + sqlalchemy.
@@ -35,6 +38,9 @@ Part 3: sqlalchemy/PostgreSQL basics (2-3 days)
 - Update your endpoints in parts 1 and 2 to actually do inserts into the database tables you created
 - Update your endpoints in parts 1 and 2 to require passing through user ids.
 
-Part 4: Meet all deliverables criteria
+## Part 4: Meet all deliverables criteria
 
-- Eric TODO
+- Allow a user to view the description and prerequisites of a specific class after sending a request containing the class name and user ID. If the user is an instructor, allow the user to see what students have signed up for the class they have posted.
+- If the user is an instructor, allow this user to create a class that provides information of: class name, class name aliases, subject tags, prerequisites, students enrolled, max enrollment number, minimum grade level
+- The data does not need to persist between sessions (i.e. when you close your server)
+- Eric TODO : Add more deliverables
