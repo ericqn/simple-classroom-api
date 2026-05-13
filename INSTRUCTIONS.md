@@ -57,7 +57,7 @@ Deliverables:
 - Create a POST endpoint that allows users of the admin level to change other users' levels as long as they are not admins.
 - Create a DELETE endpoint that allows students to remove a class they previously enrolled for.
 - Update your DELETE endpoint to delete classes and users from their respective tables inside the database. Modify this endpoint so that only users of instructor level or above can use it.
-- Create a mysterious user named "Paul Elliot" that has a 1% chance of instantly appearing in your classes whenever a user successfully enrolls. He will also add a prerequisite to the class called "Ping Pong."
+- Create a mysterious user named "Paul Elliot" grade level 67 that has a 1% chance of instantly appearing in your classes whenever a user successfully enrolls. He will also add a prerequisite to the class called "Ping Pong." Once in the class, he will remove all users that do not meet this prerequisite.
 - In general, after this part, all actions should now fetch and modify info from the setup database.
 
 ## Part 3: FastAPI + Pydantic (1-2 days)
@@ -76,6 +76,7 @@ Deliverables:
 - Add a feature where instructors of a class can invite any other user, regardless of level, to be a co-instructor.
 - Update the PATCH endpoint for changing class description + metadata so that it can only be done by the creator of the class and co-instructors.
 - Create a feature where students can enroll in classes. Make sure to check the prerequisites.
+- Create a feature where students can rate the classes they have completed, out of 10. Display the rating of the respective class when other users want to enroll.
 
 ## Part 4: Meet all deliverables criteria
 
